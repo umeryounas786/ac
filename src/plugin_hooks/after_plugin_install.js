@@ -54,8 +54,8 @@ module.exports = function (context) {
     //
     // This is done by executing 'npm install' on dependencies mentioned in the
     // plugin's package.json.
-    var Q = context.requireCordovaModule('q');
-    var npm = context.requireCordovaModule('npm');
+    var Q = context.require('q');
+    var npm = context.require('npm');
 
     var pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf-8'));
 
